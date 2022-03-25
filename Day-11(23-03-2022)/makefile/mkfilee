@@ -1,0 +1,26 @@
+$(CC)=gcc
+
+appln:	
+	$(CC)	main.c	calc_mean.c	calc_sub.c	calc_add.c	calc_div.c	calc_mul.c
+
+main.o: main.c calcium.h
+	$(CC) -c main.c
+	
+calc_mean.o: calc_mean.c calcium.h
+	$(CC) -c calc_mean.c
+	
+calc_sub.o: calc_sub.c calcium.h
+	$(CC) -c calc_sub.c
+	
+calc_add.o: calc_add.c calcium.h
+	$(CC) -c calc_add.c
+	
+calc_div.o: calc_div.c calcium.h
+	$(CC) -c calc_div.c
+	
+calc_mul.o: calc_mul.c calcium.h
+	$(CC) -c calc_mul.c
+
+.PHONY : clean
+clean:
+	rm -f *.o

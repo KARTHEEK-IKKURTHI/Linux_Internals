@@ -1,0 +1,21 @@
+// To locate ir detect any memory violations one should use a tool called "Electric-Fence".
+
+
+
+---->>To install the file via command line first update your system using ------ sudo apt-get update
+
+
+
+
+------>>After the updation of your packages use the following --------sudo apt-get install electric-fence
+
+
+------>>> While compliation of the source-code use the following process------ gcc  -g "source_code"   -lefence
+
+
+------>> Then run the program.
+
+
+
+
+------>> To set the lower boundary of the memory we need to use the following command before running the executable file in the command line----------The command to be written in the command line is the "$export EF_PROTECT_BELOW=1"----------->>>>'export EF_PROTECT_BELOW=1'

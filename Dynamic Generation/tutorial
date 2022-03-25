@@ -1,0 +1,33 @@
+----->>>Steps.....
+
+1---->>  gcc -c calc_mean.c  calc_sub.c  -fpic
+
+2---->>  ls
+
+3---->>  gcc -c main.c -o main.o
+
+
+4---->>  gcc -o main main.o  -L.  lib_dyn.so
+
+
+5----->>  ldd   main
+	----->>> ldd tells the dependacies are pending or required
+	
+6----->>  sudo cp  lib_dyn.so    /usr/lib
+	------>>> The above step adds the dynamic library to the lib folder 
+	
+7----->>  Enter the password for root access
+
+8----->>  Then run the executable file
+
+9----->>  ls
+	---->> Use sudo rm  /usr/lib/lib_dyn.so
+		----->> To check again the importance of the library......
+		
+		
+		
+10---->>  Use the export function as below
+	------->>>export LD_LIBRARY =: path of location
+	------->>> For Example------export LD_LIBRARY_PATH=:"home/einfochips/git_repo/Linux_Internals/Day-9-(21-03-2022)"
+
+11---->> Now run the executable file
