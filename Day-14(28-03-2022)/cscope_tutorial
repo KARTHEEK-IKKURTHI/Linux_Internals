@@ -1,0 +1,22 @@
+// THIS DOCUMENT IS FOR THE USE OF CSCOPE FOR EXAMINIG A C SOURCE_FILE
+
+--> First you need to install the toolkit of cscope by using "sudo apt install cscope"
+
+--> Go to the working directory and open terminal
+
+--> Now run "$cscope -R"  you will enter the menu of the cscope
+
+--> Use them accordingly
+
+--> TO exit the cscope menu use "Ctrl+D";
+
+--> Any changes made from the Cscope menu shall be reflected only after executing the "Ctrl+D"
+
+
+--> For grep you can give any source of string for Example the string is "Happy Days" we can give a search pattern to the grep by using H*.s as the pattern.
+
+--> Now next step.
+
+
+
+

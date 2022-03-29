@@ -1,0 +1,40 @@
+----------->>>>>	Steps For GDB	 <<<<<----------------
+
+1) Start with gcc  -g  source_code
+
+2)Then using gdb  ./executable_file
+
+3) If we don't use the -g during complilation there shalling be no debugging symbols message pops up.
+
+4) To exit the gdb tool use q.
+
+5) To avoid/hide the instruction provided by the gdb use gbd  -quiet ./executable_file
+
+6) To view the entire program during the debuging use the "list"/"l" command.
+		(P.S:- The entire program won't print at once it prints in parts)
+		
+7) Use the "run" command to run the program.
+
+8) Use "break main"
+	--->>The above command make the program to take a break at main.
+	---->>>"break"/"b"
+9)Use "next"/"n"
+	---->> The above command will execute the next function and comes back.
+	
+10)Use "step"/"s"
+	---->> The above function will go step-inside into the function.
+	
+11)Use "info locals"
+	---->>>>Local variables
+	
+12) Use the command "p" to print any variable during the execution of the program
+	----->>> For example p src,,,,, prints the value of src.
+
+13)Using ---->>>>  gdb  --args  ./executable file "Argument"    one can pass arguments in the command line program.
+
+14) Using ----->>gdb ---->>> set args
+		------>>It functions the same as step 13
+
+
+
+

@@ -1,0 +1,38 @@
+//Git and Git hub tutorial:
+
+
+--> Git is the Source_control.
+--> Git & Github are same as Google-Drive only difference is that we can only upload source_files in the Git & Git_Hub.
+--> When triggered "commit" the files are permanently on the repositary in the local machine.
+--> "git config" is a git source_control tool to set or get the git configurations.
+	-->	"   $git config --global  username "	" "
+	-->	"   $git config --global useremail "	"	"
+	--> The global here indicates that the configurations are stored in the local machine.
+	--> The data can be seen a file name "./git.config".
+	--> Due to global flag the ".gitconfig" is created.
+	--> By using the cat command we can see the data in the file.
+	--> We all know the file starting with "." we will use -a to see the hidden files.
+	
+--> You need to create a Github Account if already there ignore this.
+------------------->> Clone <<---------------------
+--> First Create a "Work-Station" in the local machine.
+--> Now get into your working Directory.
+--> Use "$git clone url",here url stands for the url link for the repositary to be clone.
+--> "$git status" will only show the modified files.
+--> Now "$git add"
+
+--> "$git status" shows the created mode ready to commit
+
+--> "$git commit -m url message" here url stands for the URL of the repositary in which it needs to be commited.
+
+--> "$git push url" here URL stands for the URL of Repositary to be pushed.
+--> If error occurs due to branch error use "$git checkout -b main"
+
+--> Now again use"$git push -u url"
+
+--> You can force push them but "BE AWARE THAT FILE WILL BE LOST IN THE REMOTE" use only when you want to delete any confidential files in the remote.
+
+--> The commit history gets over-written by the use of force push
+--> To use the force push use "-f".
+
+
