@@ -1,3 +1,6 @@
+
+//	This program illustrates the creation of FIFO and how to read it.
+
 #include<stdio.h>
 #include<string.h>
 #include<unistd.h>

@@ -1,4 +1,5 @@
 
+//	This program run internally it run and read and writes.
 
 #include<stdio.h>
 #include<unistd.h>
