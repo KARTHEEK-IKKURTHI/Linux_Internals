@@ -28,7 +28,7 @@ int main(){
 		char buf[20];
 		printf("In Child......\n");
 		read(p[0],buf,sizeof(buf));
-		printf("Child prio printing..... Data...of the parent process.....%s \n",buf);
+		printf("Child process printing..... Data...of the parent process.....%s \n",buf);
 		
 		
 	}
