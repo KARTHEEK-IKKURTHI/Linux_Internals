@@ -1,0 +1,37 @@
+        -:    0:Source:kill.c
+        -:    0:Graph:kill.gcno
+        -:    0:Data:-
+        -:    0:Runs:0
+        -:    1:
+        -:    2:// Program for Killing the Program 
+        -:    3:
+        -:    4:
+        -:    5:#include<stdio.h>
+        -:    6:#include<signal.h>
+        -:    7:
+        -:    8:
+    #####:    9:void sighand(int no){
+    #####:   10:	if(no == 15){
+    #####:   11:	printf(" SIGTERM \n");
+        -:   12:	}
+    #####:   13:}
+        -:   14:
+    #####:   15:main(){
+        -:   16:	sigset_t s_set;		//Structure
+    #####:   17:	signal(15,sighand);	//Signal Handler
+    #####:   18:	sigemptyset(&s_set);	//Initialize
+    #####:   19:	sigaddset(&s_set,2);	//Adding the Signals to a grp of signals set.
+    #####:   20:	perror("sig2");
+    #####:   21:	sigaddset(&s_set,4);	//Adding the Signals to a grp of signals set.
+    #####:   22:	perror("sig4");
+    #####:   23:	sigprocmask(SIG_BLOCK|SIG_SETMASK,&s_set,NULL);		//Block the Specific Signals
+    #####:   24:	perror("sigmask");
+    #####:   25:	printf("Send me signal one and see the effect now \n");
+    #####:   26:	getchar();
+    #####:   27:	getchar();
+    #####:   28:	sigprocmask(SIG_UNBLOCK,&s_set,NULL);		//Block the Specific Signals
+    #####:   29:	printf("Now signals are unblocked \n");
+        -:   30:	
+    #####:   31:	while(1);
+        -:   32:	
+        -:   33:}
